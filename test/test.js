@@ -4,8 +4,6 @@ require('should');
 var anyfetchFileHydrater = require('anyfetch-file-hydrater');
 var markdown = require('../lib/');
 
-var hydrationError = anyfetchFileHydrater.hydrationError;
-
 describe('Test markdown results', function() {
   it('returns the correct informations', function(done) {
     var document = {
@@ -15,6 +13,10 @@ describe('Test markdown results', function() {
     var changes = anyfetchFileHydrater.defaultChanges();
 
     markdown(__dirname + "/samples/document.md", document, changes, function(err, changes) {
+      if (err) {
+        done(new Error("It should not have an error"));
+      }
+
       changes.should.have.property('data');
       changes.should.have.property('document_type', 'document');
       changes.data.should.have.property('html');
@@ -38,7 +40,7 @@ describe('Test markdown results', function() {
       if (err) {
         done();
       } else {
-        done(new Error("invalid error"));
+        done(new Error("It should have an error"));
       }
     });
   });
