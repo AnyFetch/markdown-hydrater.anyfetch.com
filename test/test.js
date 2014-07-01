@@ -21,9 +21,9 @@ describe('Test markdown results', function() {
       changes.should.have.property('document_type', 'document');
       changes.data.should.have.property('html');
 
-      changes.data.html.should.include('<h1>Test document</h1>');
-      changes.data.html.should.include('<blockquote><p>Citation</p></blockquote>');
-      changes.data.html.should.include('<p>Normal text</p>');
+      changes.data.html.should.containDeep('<h1>Test document</h1>');
+      changes.data.html.should.containDeep('<blockquote><p>Citation</p></blockquote>');
+      changes.data.html.should.containDeep('<p>Normal text</p>');
 
       done();
     });
