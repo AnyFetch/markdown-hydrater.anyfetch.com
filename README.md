@@ -1,11 +1,10 @@
-# Image AnyFetch Hydrater
+# Markdown AnyFetch Hydrater
 > Visit http://anyfetch.com for details about AnyFetch.
 
-AnyFetch Hydrater for images.
+AnyFetch Hydrater for markdown files.
 
 # How to install?
 ```
-sudo apt-get install imagemagick
 npm install
 ```
 

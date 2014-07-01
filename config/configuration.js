@@ -19,7 +19,5 @@ module.exports = {
   env: node_env,
   port: process.env.PORT || default_port,
 
-  thumb_size: "350x250",
-  display_size: "750x750",
-  concurrency: process.env.IMAGE_CONCURRENCY || default_concurrency
+  concurrency: process.env.MARKDOWN_CONCURRENCY || default_concurrency
 };

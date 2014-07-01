@@ -4,11 +4,11 @@
 var anyfetchFileHydrater = require('anyfetch-file-hydrater');
 
 var config = require('./config/configuration.js');
-var imageHydrater = require('./lib');
+var markdownHydrater = require('./lib');
 
 var serverConfig = {
   concurrency: config.concurrency,
-  hydrater_function: imageHydrater
+  hydrater_function: markdownHydrater
 };
 
 var server = anyfetchFileHydrater.createServer(serverConfig);

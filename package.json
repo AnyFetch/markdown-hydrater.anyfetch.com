@@ -1,7 +1,7 @@
 {
-  "name": "anyfetch-image-hydrater",
+  "name": "anyfetch-markdown-hydrater",
   "version": "1.0.0",
-  "author": "Matthieu Bacconnier <matthieu@papiel.fr>",
+  "author": "Quentin Buathier <quentin.buathier@epitech.eu>",
   "bin": {
     "server": "./bin/server"
   },
@@ -13,21 +13,22 @@
   "main": "./lib/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AnyFetch/image.hydrater.anyfetch.com"
+    "url": "https://github.com/AnyFetch/markdown.hydrater.anyfetch.com"
   },
   "keywords": [
     "anyfetch",
     "hydrater",
-    "tika"
+    "markdown"
   ],
   "dependencies": {
     "async": "0.9.x",
     "anyfetch-file-hydrater": ">=0.2.18",
-    "newrelic": "1.x.x"
+    "newrelic": "1.x.x",
+    "markdown": "0.5.x"
   },
   "devDependencies": {
     "mocha": "1.17.x",
-    "should": "3.1.x",
+    "should": "4.x.x",
     "supertest": "0.9.x",
     "jshint": "2.4.x"
   },
