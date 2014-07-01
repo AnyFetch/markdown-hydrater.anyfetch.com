@@ -13,7 +13,7 @@ describe('Test markdown results', function() {
     var changes = anyfetchFileHydrater.defaultChanges();
 
     markdown(__dirname + "/samples/document.md", document, changes, function(err, changes) {
-      if (err) {
+      if(err) {
         done(new Error("It should not have an error"));
       }
 
@@ -37,7 +37,7 @@ describe('Test markdown results', function() {
     var changes = anyfetchFileHydrater.defaultChanges();
 
     markdown(__dirname + "/samples/notfound.md", document, changes, function(err) {
-      if (err) {
+      if(err) {
         done();
       } else {
         done(new Error("It should have an error"));
