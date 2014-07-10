@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "async": "0.9.x",
-    "anyfetch-file-hydrater": ">=0.2.18",
+    "anyfetch-hydrater": "^0.3.0",
     "newrelic": "1.x.x",
     "markdown": "0.5.x"
   },
