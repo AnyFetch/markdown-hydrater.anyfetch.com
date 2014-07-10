@@ -1,7 +1,7 @@
 'use strict';
 
 require('should');
-var anyfetchFileHydrater = require('anyfetch-file-hydrater');
+var anyfetchHydrater = require('anyfetch-hydrater');
 var markdown = require('../lib/');
 
 describe('Test markdown results', function() {
@@ -10,7 +10,7 @@ describe('Test markdown results', function() {
       data: {},
     };
 
-    var changes = anyfetchFileHydrater.defaultChanges();
+    var changes = anyfetchHydrater.defaultChanges();
 
     markdown(__dirname + "/samples/document.md", document, changes, function(err, changes) {
       if(err) {
@@ -37,7 +37,7 @@ describe('Test markdown results', function() {
       data: {},
     };
 
-    var changes = anyfetchFileHydrater.defaultChanges();
+    var changes = anyfetchHydrater.defaultChanges();
 
     markdown(__dirname + "/samples/notfound.md", document, changes, function(err) {
       if(err) {
