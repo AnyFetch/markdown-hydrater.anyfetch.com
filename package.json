@@ -1,0 +1,41 @@
+<<<<<<< HEAD
+=======
+{
+  "name": "anyfetch-markdown-hydrater",
+  "version": "1.0.0",
+  "author": "Quentin Buathier <quentin.buathier@epitech.eu>",
+  "bin": {
+    "server": "./bin/server"
+  },
+  "scripts": {
+    "start": "node ./bin/server",
+    "test": "NODE_ENV=test mocha -R spec -t 10000 test/",
+    "lint": "jshint lib/ test/ config/ bin/"
+  },
+  "main": "./lib/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnyFetch/markdown-hydrater.anyfetch.com"
+  },
+  "keywords": [
+    "anyfetch",
+    "hydrater",
+    "markdown"
+  ],
+  "dependencies": {
+    "async": "0.9.x",
+    "anyfetch-hydrater": "1.0.13",
+    "markdown": "0.5.x"
+  },
+  "devDependencies": {
+    "mocha": "1.20.x",
+    "should": "4.x.x",
+    "supertest": "0.13.x",
+    "jshint": "2.5.x"
+  },
+  "licence": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
+>>>>>>> 21e12b8ba1ea6f049eac8d33a9bc5b11fc6c6538
