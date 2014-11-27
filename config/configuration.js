@@ -21,5 +21,5 @@ module.exports = {
 
   concurrency: process.env.MARKDOWN_CONCURRENCY || defaultConcurrency,
   appName: process.env.APP_NAME || "markdown-hydrater",
-  redisURL: process.env.REDIS_URL
+  redisUrl: process.env.REDIS_URL
 };
