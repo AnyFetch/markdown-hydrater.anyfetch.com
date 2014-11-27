@@ -19,5 +19,7 @@ module.exports = {
   env: nodeEnv,
   port: process.env.PORT || defaultPort,
 
-  concurrency: process.env.MARKDOWN_CONCURRENCY || defaultConcurrency
+  concurrency: process.env.MARKDOWN_CONCURRENCY || defaultConcurrency,
+  appName: process.env.APP_NAME || "markdown-hydrater",
+  redisURL: process.env.REDIS_URL
 };
