@@ -21,8 +21,9 @@
     "markdown"
   ],
   "dependencies": {
-    "async": "0.9.x",
     "anyfetch-hydrater": "^2.0.6",
+    "async": "0.9.x",
+    "html-entities": "^1.1.2",
     "markdown": "0.5.x"
   },
   "devDependencies": {
