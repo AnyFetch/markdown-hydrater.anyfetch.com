@@ -16,17 +16,14 @@ describe('Test markdown results', function() {
       if(err) {
         done(new Error("It should not have an error"));
       }
-
       changes.should.have.property('data');
       changes.should.have.property('metadata');
       changes.should.have.property('document_type', 'document');
       changes.data.should.have.property('html');
       changes.metadata.should.have.property('text');
 
-      changes.data.html.should.containDeep('<h1>Test document</h1>');
-      changes.data.html.should.containDeep('<blockquote><p>Citation</p></blockquote>');
-      changes.data.html.should.containDeep('<p>Normal text</p>');
-      changes.metadata.text.should.containDeep('Test document\n\nCitation\n\nNormal text');
+      changes.data.html.should.containDeep('<h1>Test document</h1>\n\n<blockquote><p>Citation</p></blockquote>\n\n<p>Normal text\n&amp;\nà\nç\n§</p>');
+      changes.metadata.text.should.containDeep('Test document\n\nCitation\n\nNormal text\n&\nà\nç\n§');
 
       done();
     });
